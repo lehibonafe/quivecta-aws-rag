@@ -1,6 +1,12 @@
 <div align="center">
-
-# quivecta
+<img
+  src="https://api.iconify.design/lucide/brain-circuit.svg?color=%23ffffff"
+  width="40"
+  height="40"
+  alt="Brain Circuit"
+/>
+    
+# Quivecta
 
 ### Serverless Document Intelligence Platform
 
