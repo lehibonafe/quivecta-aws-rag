@@ -1,6 +1,6 @@
 <div align="center">
 
-# Docinqa
+# quivecta
 
 ### Serverless Document Intelligence Platform
 
@@ -16,7 +16,7 @@ A serverless, event-driven Retrieval-Augmented Generation (RAG) application on A
 
 ## Overview
 
-Docinqa helps users work with their own documents without manually searching through pages of text. Instead of answering from a general-purpose model alone, it retrieves relevant excerpts from uploaded files and uses those excerpts as context for a response.
+quivecta helps users work with their own documents without manually searching through pages of text. Instead of answering from a general-purpose model alone, it retrieves relevant excerpts from uploaded files and uses those excerpts as context for a response.
 
 **Typical workflow:**
 
@@ -162,7 +162,7 @@ Illustrative response:
 ## Suggested repository structure
 
 ```text
-docinqa/
+quivecta/
 ├── README.md
 ├── src/
 │   ├── upload.py             # Presigned URL + document status
@@ -277,7 +277,7 @@ POST /uploads  →  S3 PUT  →  SQS  →  rag-ingest
 
 ## Cost considerations
 
-Docinqa favors usage-based services: Lambda, API Gateway HTTP API, SQS, S3, DynamoDB On-Demand, S3 Vectors, and Bedrock. There is no always-on EC2, NAT Gateway, OpenSearch cluster, or RDS instance in the MVP.
+quivecta favors usage-based services: Lambda, API Gateway HTTP API, SQS, S3, DynamoDB On-Demand, S3 Vectors, and Bedrock. There is no always-on EC2, NAT Gateway, OpenSearch cluster, or RDS instance in the MVP.
 
 Charges may still accrue for stored files/vectors, logs, requests, inference tokens, and data transfer, including cross-Region requests to Bedrock. Configure an AWS Budget and monitor Cost Explorer. Budgets are alerts rather than hard spending limits.
 
@@ -322,6 +322,6 @@ Charges may still accrue for stored files/vectors, logs, requests, inference tok
 
 <div align="center">
 
-**Docinqa** — *Ask your documents. Find the intelligence within.*
+**quivecta** — *Ask your documents. Find the intelligence within.*
 
 </div>
